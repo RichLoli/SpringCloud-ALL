@@ -1,4 +1,4 @@
-package cn.sheepy.springcloud.entities;
+package cn.sheepy.springcloud.entites;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,0 +1,14 @@
+server:
+  port: 7002
+
+eureka:
+  instance:
+    hostname: eureka2
+  client:
+    #表示是否向注册中心注册自己以供其他服务发现
+    register-with-eureka: false
+    #此客户端是否获取eureka服务器注册表上的注册信息，默认为true
+    fetch-registry: false
+    service-url:
+      #设置与Eureka Server交互的地址查询服务和注册服务都需要依赖这个地址
+      defaultZone: http://localhost:7001/eureka,http://localhost:7002/eureka
