@@ -12,3 +12,8 @@ eureka:
     service-url:
       #设置与Eureka Server交互的地址查询服务和注册服务都需要依赖这个地址
       defaultZone: http://localhost:7001/eureka,http://localhost:7002/eureka
+  server:
+    #自我保护机制
+    enable-self-preservation: false
+    #过期应用移出时间
+    eviction-interval-timer-in-ms: 2000

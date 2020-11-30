@@ -17,6 +17,13 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:7001/eureka,http://localhost:7002/eureka
+  instance:
+    instance-id: payment8001
+    prefer-ip-address: true
+    #心跳发送键哥
+    lease-renewal-interval-in-seconds: 1
+    #服务中断剔除时间
+    lease-expiration-duration-in-seconds: 2
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml
