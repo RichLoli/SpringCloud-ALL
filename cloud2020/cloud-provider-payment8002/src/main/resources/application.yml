@@ -20,6 +20,10 @@ eureka:
   instance:
     instance-id: payment8002
     prefer-ip-address: true
+    #心跳发送间隔
+    lease-renewal-interval-in-seconds: 1
+    #服务中断剔除时间
+    lease-expiration-duration-in-seconds: 2
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml
